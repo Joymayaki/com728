@@ -1,9 +1,11 @@
+# The function with a single parameter named 'file_path'
 def search(file_path):
     print("Searching...")
 
     sections = ""
     books = "Books:\n"
 
+    # Determine which message to display
     with open(file_path) as file:
         for line in file:
             if line.startswith("Section"):
@@ -23,6 +25,7 @@ def save(file_path, data):
     print("Done!")
 
 
+# call to function
 def run():
     data = search("books.txt")
     save("books.txt", data)
