@@ -1,3 +1,4 @@
+# The function with a single parameter named 'file_path'
 def search(file_path):
     print("Searching...")
     with open(file_path) as file:
@@ -6,6 +7,7 @@ def search(file_path):
     print("Done!")
 
 
+# call to function
 def run():
     search("library.txt")
 
